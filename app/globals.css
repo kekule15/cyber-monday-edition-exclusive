@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-syne), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: var(--font-body), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-obsidian: #0B0B0D;
+  --color-card-surface: #151518;
+  --color-electric-orange: #FF6A00;
+  --color-amber-accent: #FFB000;
+  --color-main-text: #F5F5F5;
+  --color-muted-text: #929292;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Subtle editorial background texture & glow helpers */
+.bg-radial-gradient-orange {
+  background: radial-gradient(
+    circle at 65% 40%,
+    rgba(255, 106, 0, 0.18) 0%,
+    rgba(255, 176, 0, 0.06) 35%,
+    rgba(11, 11, 13, 0) 70%
+  );
+}
+
+.text-gradient-orange {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F5F5F5 40%, #FF6A00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-amber {
+  background: linear-gradient(135deg, #FF6A00 0%, #FFB000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle backdrop grain */
+.noise-overlay {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 0);
+  background-size: 24px 24px;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "CYBER MONDAY | Édition Exclusive",
+  "description": "Le Cyber Monday est arrivé. Une journée exclusive d'offres exceptionnelles avec une expérience shopping futuriste et audacieuse.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
